@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(148, 163, 184); 
+  border-radius: 5px;
+  background-color: rgb(100, 116, 139);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 163, 184); 
+  border-radius: 5px;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media print {
+  .printPageButton {
+    display: none;
+  }
+}
